@@ -3,25 +3,25 @@
     <li class="item">
         <div class="wrap">
             <strong class="name">Tester’s Email:</strong>
-            <a href="mailto:tishma@testfairy.com">tishma@testfairy.com</a>
+            <a href="$baseUrl/issues/?jql=issue.property%5BtestfairySession%5D.testerEmail%20~%20'$testerEmail'">$testerEmail</a>
         </div>
     </li>
     <li class="item item-right">
         <div class="wrap">
             <strong class="name">Device Model:</strong>
-            <a href="#">Samsung SM-G900F</a>
+            <a href="$baseUrl/issues/?jql=issue.property%5BtestfairySession%5D.deviceModel%20~%20'$deviceModel'">$deviceModel</a>
         </div>
     </li>
     <li class="item">
         <div class="wrap">
             <strong class="name">OS Version:</strong>
-            <a href="#">5.0</a>
+            <a href="$baseUrl/issues/?jql=issue.property%5BtestfairySession%5D.osVersion%20~%20'$osVersion'">$osVersion</a>
         </div>
     </li>
     <li class="item item-right">
         <div class="wrap">
             <strong class="name">Platform:</strong>
-            <a href="#">Android</a>
+            <a href="$baseUrl/issues/?jql=issue.property%5BtestfairySession%5D.platform%20~%20'$platform'">$platform</a>
         </div>
     </li>
 </ul>
@@ -39,4 +39,4 @@
     }
     window.addEventListener("message", receiveMessage, false);
 </script>
-<iframe id="testfairy-iframe" src="$url" frameborder="0" width="100%"></iframe>
+<iframe id="testfairy-iframe" src="$sessionUrl?iframe" frameborder="0" width="100%"></iframe>

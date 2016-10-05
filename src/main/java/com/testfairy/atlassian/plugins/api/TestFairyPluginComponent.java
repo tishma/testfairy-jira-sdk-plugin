@@ -1,6 +1,6 @@
 package com.testfairy.atlassian.plugins.api;
 
-public interface MyPluginComponent
+public interface TestFairyPluginComponent
 {
     String getName();
 }

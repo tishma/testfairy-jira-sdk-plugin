@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.testfairy.atlassian.plugins</groupId>
     <artifactId>testfairy-jira-plugin</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>V</version>
     <organization>
         <name>TestFairy Ltd</name>
         <url>http://www.testfairy.com/</url>

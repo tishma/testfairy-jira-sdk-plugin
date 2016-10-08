@@ -5,7 +5,7 @@ jdk:
 
 before_install:
 - sudo apt-get update
-- sudo add-apt-repository "deb http://sdkrepo.atlassian.com/debian/ stable contrib"
+- sudo echo "deb http://sdkrepo.atlassian.com/debian/ stable contrib" >> /etc/apt/sources.list
 - sudo cat < /etc/apt/sources.list
 - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B07804338C015B73
 - sudo apt-get update

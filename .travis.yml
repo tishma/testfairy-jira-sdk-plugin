@@ -1,6 +1,6 @@
 language: java
 
-before_install:
+install:
 - sudo echo "deb http://sdkrepo.atlassian.com/debian/ stable contrib" >>/etc/apt/sources.list
 - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B07804338C015B73
 - sudo apt-get update

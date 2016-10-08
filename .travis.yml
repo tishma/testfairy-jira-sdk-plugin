@@ -10,6 +10,8 @@ before_install:
 - sudo apt-get install apt-transport-https
 - sudo apt-get update
 
+install: false
+
 script:
 - atlas-package
 - mv target/testfairy-jira-plugin-*SNAPSHOT.jar target/testfairy-jira-plugin.jar

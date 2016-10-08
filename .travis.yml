@@ -1,7 +1,10 @@
 language: java
 
-install:
-- sudo echo "deb http://sdkrepo.atlassian.com/debian/ stable contrib" >>/etc/apt/sources.list
+jdk:
+- oraclejdk8
+
+before_install:
+- sudo echo "deb http://sdkrepo.atlassian.com/debian/ stable contrib" >> /etc/apt/sources.list
 - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B07804338C015B73
 - sudo apt-get update
 - sudo apt-get install apt-transport-https

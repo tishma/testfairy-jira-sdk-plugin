@@ -4,11 +4,10 @@ jdk:
 - oraclejdk8
 
 before_install:
-#- sudo echo "deb http://sdkrepo.atlassian.com/debian/ stable contrib" >> /etc/apt/sources.list
+- sudo echo "deb http://sdkrepo.atlassian.com/debian/ stable contrib" >> /etc/apt/sources.list
 - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B07804338C015B73
 - sudo apt-get update
-- sudo apt-get install apt-transport-https
-- sudo apt-get update
+- sudo sudo apt-get install atlassian-plugin-sdk
 
 install: true
 

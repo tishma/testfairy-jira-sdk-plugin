@@ -1,0 +1,31 @@
+language: java
+
+script:
+  - atlas-package
+
+before_install:
+  - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B07804338C015B73
+
+addons:
+  apt:
+    sources:
+    - sourceline: 'deb http://sdkrepo.atlassian.com/debian/ stable contrib'
+    packages:
+    - atlassian-plugin-sdk-6.2.2
+
+build:
+  -
+
+deploy:
+  provider: releases
+  api_key:
+    secure:
+  file:
+    - target/testfairy-jira-plugin.jar
+  on:
+    tags: true
+    repo: tishma/testfairy-jira-sdk-plugin
+
+notifications:
+  email: true
+
